@@ -1,0 +1,10 @@
+* {
+  font-family: 'Roboto';
+  padding: 5px;
+  margin: 5px;
+  background: #cde4ff;
+  color:  #000000;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  line-height: 1.5;
+}
