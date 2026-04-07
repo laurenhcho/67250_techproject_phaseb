@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <div class="logo_wrap">
+                <a href="../index.html">
+                    <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo">
+                </a>
+            </div>
+
+            <div class="header_right">
+                <p class="hours">Today: 11AM - 6PM</p>
+                <a class="ticket_btn desktop_ticket" href="./buytickets.html">Buy Tickets</a>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myNav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="buytickets.html" class="mobile_ticket">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+        </nav>
+
+        <main class="explore_main">
+            <section class="explore_top">
+                <img class="explore_feature_img" src="../static/exploremuseum.png" alt="Interior view of MonoMuse">
+
+                <div class="explore_intro_text">
+                    <div class="explore_text_block">
+                        <h2>Mission Statement</h2>
+                        <p>
+                            MonoMuse explores the intersection of art, technology, and imagination. Our mission is to create immersive experiences that spark curiosity, inspire creativity, and challenge the way people see the world. Through interactive exhibitions and experimental media, we celebrate how digital innovation and human expression come together to shape the future of storytelling and culture.
+                        </p>
+                    </div>
+
+                    <div class="explore_text_block">
+                        <h2>Who We Serve</h2>
+                        <p>
+                            MonoMuse welcomes artists, students, technologists, and curious minds from around the world. Whether visitors are exploring digital art for the first time or pushing the boundaries of creative technology, the museum provides a space where ideas, innovation, and collaboration thrive. We believe creativity should be accessible to everyone.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="explore_divider">
+
+            <section class="history_section">
+                <h2>History</h2>
+                <p>
+                    MonoMuse was founded in 2016 with the vision of building a museum where art and emerging technology could coexist. From its first exhibition on digital storytelling to its current interactive installations, MonoMuse continues to evolve alongside the creative technologies it showcases.
+                </p>
+
+                <ul class="history_list">
+                    <li><strong>2016:</strong> MonoMuse opens its doors with its inaugural exhibition exploring digital storytelling and interactive media.</li>
+                    <li><strong>2018:</strong> Launch of the Interactive Media Lab, giving visitors hands-on opportunities to experiment with creative coding and immersive installations.</li>
+                    <li><strong>2021:</strong> Introduction of immersive AI-generated art galleries and collaborative artist residencies.</li>
+                    <li><strong>2023:</strong> Major expansion of the museum space and the start of international artist partnerships and traveling exhibitions.</li>
+                    <li><strong>2025:</strong> Over 500,000 visitors reached and the debut of the Future Creators program supporting emerging digital artists.</li>
+                </ul>
+            </section>
+
+            <hr class="explore_divider">
+
+            <section class="directions_section">
+                <div class="directions_text">
+                    <h2>Directions</h2>
+                    <p><strong>123 Forbes Avenue,<br>Pittsburgh PA 15213</strong></p>
+                    <p>
+                        The main entrance is on 53rd Street, close to Sixth Avenue and just east of our flagship Museum Store.
+                    </p>
+                </div>
+
+                <div class="map_wrap">
+                    <iframe class="google_map" src="https://www.google.com/maps?q=123+Forbes+Avenue+Pittsburgh+PA+15213&output=embed">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+
+    </div>
+</body>
+</html>

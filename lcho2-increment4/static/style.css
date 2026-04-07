@@ -6,11 +6,37 @@
   font-weight: 300;
   line-height: 1.5;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 body {
   background: #fff9e4;
   color: #171622;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav_bar nav_bar"
+    "main main"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav_bar {
+  grid-area: nav_bar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 #logo {
@@ -33,7 +59,7 @@ nav a:hover {
   color: #4d5c3b;
 }
 
-#navselected {
+.active {
   color: #312620;
   font-weight: 700;
 }
@@ -54,13 +80,13 @@ nav a:hover {
   color: white;
 }
 
-.cta#navselected {
+.cta.active {
   background-color: #74584c;
   color: white;
   border: none;
 }
 
-.cta#navselected:hover {
+.cta.active:hover {
   background-color: #312620;
   color: white;
 }
@@ -85,4 +111,46 @@ tr:nth-child(even) {
 form * {
   margin: auto;
   text-align: center;
+}
+
+#longIntro {
+  display: none;
+}
+
+#readLess {
+  display: none;
+}
+
+#readMore,
+#readLess {
+  background-color: #74584c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#readMore:hover,
+#readLess:hover {
+  background-color: #312620;
+}
+
+#ticketForm {
+  display: none;
+}
+
+button {
+  background-color: #74584c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #312620;
 }

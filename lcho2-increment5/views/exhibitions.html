@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exhibitions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <div class="logo_wrap">
+                <a href="../index.html">
+                    <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo">
+                </a>
+            </div>
+
+            <div class="header_right">
+                <p class="hours">Today: 11AM - 6PM</p>
+                <a class="ticket_btn desktop_ticket" href="buytickets.html">Buy Tickets</a>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myNav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="buytickets.html" class="mobile_ticket">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+        </nav>
+
+        <main class="exhibitions_main">
+            <section class="exhibitions_intro">
+                <h1>Art Exhibitions</h1>
+            </section>
+
+            <div class="exhibitions_grid">
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Echoes of the Digital Mind</h2>
+                    <p>
+                        This exhibition explores how artificial intelligence interprets human creativity. Visitors can interact with installations where AI systems generate paintings, music, and poetry in real time based on audience input.
+                    </p>
+                </article>
+
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Light, Motion, and Memory</h2>
+                    <p>
+                        An immersive exhibition blending projection, sound, and movement. As visitors move through the gallery, sensors transform their motion into shifting patterns of light and color.
+                    </p>
+                </article>
+
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Future Archive</h2>
+                    <p>
+                        A digital preservation exhibition examining how museums, artists, and communities store culture in an age of rapid technological change.
+                    </p>
+                </article>
+
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Interactive Worlds</h2>
+                    <p>
+                        Visitors step into responsive environments where projection, sound, and movement transform gallery space into participatory artwork.
+                    </p>
+                </article>
+
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Code as Canvas</h2>
+                    <p>
+                        This exhibition highlights artists who use code, algorithms, and generative systems as their primary creative medium.
+                    </p>
+                </article>
+
+                <article class="exhibit_card">
+                    <div class="exhibit_img"></div>
+                    <h2>Signals and Silence</h2>
+                    <p>
+                        A multimedia exhibition exploring sound, absence, and digital communication through immersive installations and experimental media.
+                    </p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -10,36 +10,47 @@
     <meta name="author" content="Your name">
     <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
     <meta name="description" content="MonoMuse website redesign project">
-    <title>Checkout</title>
+    <title>Tickets</title>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo">
         <nav>
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
-            <a href="tickets.html">Buy Tickets</a>
-            <a class="cta" id="navselected" href="checkout.html">Checkout</a>
+            <a id="navselected" href="tickets.html">Buy Tickets</a>
+            <a class="cta" href="checkout.html">Checkout</a>
 
         </nav>
     </header>
     <div class="main">
-        <form>
-            <label for="name">Name (required):</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email (required):</label><br>
-            <input type="text" id="email" name="email" required><br><br>
-
-            <label for="quantity">Ticket Quantity (required):</label><br>
-            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price ($)</th>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Student ID Required.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>Member ID Required.</td>
+                <td>$15</td>
+            </tr>
+        </table>
     </div>
 </body>
 <footer>
-    <p>© 2026 MonoMuse. All rights reserved.</p>
+    <p id="copyYear"></p>
 </footer>
 </html>
+<script src="../static/script.js" defer></script>

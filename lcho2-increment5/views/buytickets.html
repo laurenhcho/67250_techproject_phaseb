@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/logo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar" id="myNav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="buytickets.html" class="mobile_ticket">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+        </nav>
+
+        <main class="buytickets_main">
+            <h2>Buy Tickets</h2>
+
+            <table class="ticket_table">
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price ($)</th>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>Student ID required.</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Member ID required.</td>
+                    <td>$15</td>
+                </tr>
+            </table>
+
+            <h3>Available Dates</h3>
+
+            <table class="ticket_table">
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>May 10, 2026</td>
+                    <td>10:00 AM</td>
+                    <td><button class="ticket_action_btn" onclick="showForm('May 10, 2026')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 12, 2026</td>
+                    <td>1:00 PM</td>
+                    <td><button class="ticket_action_btn" onclick="showForm('May 12, 2026')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 15, 2026</td>
+                    <td>3:00 PM</td>
+                    <td><button class="ticket_action_btn" onclick="showForm('May 15, 2026')">Buy Now</button></td>
+                </tr>
+            </table>
+
+            <form id="ticketForm">
+                <h3>Purchase Form</h3>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="quantity">Number of Tickets:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="selectedDate">Selected Date:</label>
+                <input type="text" id="selectedDate" name="selectedDate" readonly>
+
+                <button type="button" onclick="submitPurchase()">Submit</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
